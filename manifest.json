@@ -12,12 +12,12 @@
             "background.js"
         ]
     },
-    "icons":{"16":"images/sb.png",
-      "32":"images/sb.png",
-      "64":"images/sb.png",
-      "128":"images/sb.png"},
+    "icons":{"16":"sb.png",
+      "32":"sb.png",
+      "64":"sb.png",
+      "128":"sb.png"},
     "browser_action": {
-        "default_icon": "images/sb.png",
+        "default_icon": "sb.png",
         "default_title": "ScreenEditor",
         "default_popup": "popup.html"
     },
