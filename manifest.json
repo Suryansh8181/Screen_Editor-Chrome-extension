@@ -1,0 +1,38 @@
+{
+    "name": "ScreenEditor",
+    "version": "0.0.1",
+    "description": "Screen Text Editor and Take Screenshot ",
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab"
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "icons":{"16":"images/sb.png",
+      "32":"images/sb.png",
+      "64":"images/sb.png",
+      "128":"images/sb.png"},
+    "browser_action": {
+        "default_icon": "images/sb.png",
+        "default_title": "ScreenEditor",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "contentScript.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
